@@ -866,22 +866,16 @@ src="https://www.facebook.com/tr?id=1274900473188774&ev=PageView&noscript=1"
           Start small. Grow into it. Or hand us the keys.
         </p>
       </div>
-      <div class="inline-flex items-center gap-1 rounded-full bg-panel ring-1 ring-white/[0.08] p-1 self-start lg:self-end">
-        <button @click="billing='monthly'" class="px-4 h-9 rounded-full text-[13px] font-medium transition" :class="billing==='monthly' ? 'bg-accent text-white' : 'text-ink-muted hover:text-ink'">Monthly</button>
-        <button @click="billing='annual'" class="px-4 h-9 rounded-full text-[13px] font-medium transition flex items-center gap-2" :class="billing==='annual' ? 'bg-accent text-white' : 'text-ink-muted hover:text-ink'">
-          Annual <span class="text-[10.5px] font-mono uppercase rounded px-1.5 py-0.5" :class="billing==='annual' ? 'bg-white/20' : 'bg-accent/15 text-accent'">−20%</span>
-        </button>
-      </div>
     </div>
 
     <div class="mt-12 grid grid-cols-1 lg:grid-cols-3 gap-5 items-stretch">
       <div class="rounded-2xl bg-panel ring-1 ring-white/[0.06] p-6 md:p-7 flex flex-col">
         <div class="text-[13px] font-mono uppercase tracking-wide text-ink-faint">Standalone CRM</div>
         <div class="mt-5 flex items-baseline gap-2">
-          <span class="font-tight font-semibold text-[48px] leading-none">$<span x-text="billing==='monthly' ? '49' : '39'"></span></span>
+          <span class="font-tight font-semibold text-[48px] leading-none">$29</span>
           <span class="text-ink-muted text-[14px]">/mo</span>
         </div>
-        <div class="mt-1 text-[12px] text-ink-faint line-through">US$ 29.90</div>
+        <div class="mt-1 text-[12px] text-ink-faint line-through">US$ 79.90</div>
         <div class="mt-2 inline-flex self-start px-2 py-1 bg-accent/10 text-accent text-[10.5px] font-mono uppercase rounded">Limited time deal</div>
         <p class="mt-4 text-[14.5px] text-ink">Everything you need to get started.</p>
 
@@ -899,6 +893,69 @@ src="https://www.facebook.com/tr?id=1274900473188774&ev=PageView&noscript=1"
 
         <div class="mt-7 pt-6 border-t border-white/[0.06] mt-auto">
           <button onclick="window.location.href='https://link.msgsndr.com/payment-link/69fdf5fd34d67b041e7e8590'" class="w-full inline-flex items-center justify-center gap-2 border border-accent/50 hover:bg-accent/10 transition text-accent font-semibold h-12 rounded-xl">
+            Choose Package →
+          </button>
+        </div>
+      </div>
+
+      <div class="relative rounded-2xl bg-panel ring-2 ring-accent/60 p-6 md:p-7 flex flex-col shadow-glow lg:scale-[1.03] lg:-my-2 z-10">
+        <div class="absolute -top-3 left-1/2 -translate-x-1/2 inline-flex items-center gap-1.5 bg-accent text-white text-[10.5px] font-mono uppercase tracking-wider px-3 py-1.5 rounded-full whitespace-nowrap">
+          Popular Package
+        </div>
+        <div class="text-[13px] font-mono uppercase tracking-wide text-accent">Procoach</div>
+        <div class="mt-5 flex items-baseline gap-2">
+          <span class="font-tight font-semibold text-[48px] leading-none">$69</span>
+          <span class="text-ink-muted text-[14px]">/mo</span>
+        </div>
+        <div class="mt-1 text-[12px] text-ink-faint line-through">US$ 149.90</div>
+        <div class="mt-2 inline-flex self-start px-2 py-1 bg-accent/10 text-accent text-[10.5px] font-mono uppercase rounded">Limited time deal</div>
+        <p class="mt-4 text-[14.5px] text-ink">More tools and power for growth.</p>
+
+        <div class="mt-6 text-[12px] font-mono uppercase text-ink-faint">Everything in Starter, plus:</div>
+        <ul class="mt-3 space-y-2.5 text-[13.5px] text-ink-muted">
+          <li class="flex gap-2"><span class="text-accent">✓</span> Funnel & Website Builder</li>
+          <li class="flex gap-2"><span class="text-accent">✓</span> Forms & Surveys</li>
+          <li class="flex gap-2"><span class="text-accent">✓</span> Calendars & Automated Bookings & Appointments</li>
+          <li class="flex gap-2"><span class="text-accent">✓</span> Email Builder Campaigns With Analytics</li>
+          <li class="flex gap-2"><span class="text-accent">✓</span> Automation Workflows</li>
+          <li class="flex gap-2"><span class="text-accent">✓</span> Phone System With Routing</li>
+          <li class="flex gap-2"><span class="text-accent">✓</span> 5 Hours Dedicated Onboarding</li>
+          <li class="flex gap-2"><span class="text-accent">✓</span> Comprehensive Digital Tool Suite Access</li>
+        </ul>
+
+        <div class="mt-7 pt-6 border-t border-white/[0.06] mt-auto">
+          <button onclick="window.location.href='https://link.msgsndr.com/payment-link/69fdf5fd34d67b041e7e8590'" class="w-full inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover transition text-white font-semibold h-14 rounded-xl">
+            Choose Package →
+          </button>
+        </div>
+      </div>
+
+      <div class="relative rounded-2xl bg-gradient-to-b from-[#1c1a17] to-panel ring-1 ring-accent-soft/40 p-6 md:p-7 flex flex-col">
+        <div class="text-[13px] font-mono uppercase tracking-wide text-accent-soft">Done for You</div>
+        <div class="mt-5 flex items-baseline gap-2">
+          <span class="font-tight font-semibold text-[48px] leading-none">$199</span>
+          <span class="text-ink-muted text-[14px]">/mo</span>
+        </div>
+        <div class="mt-1 text-[12px] text-ink-faint line-through">US$ 249.90</div>
+        <div class="mt-2 inline-flex self-start px-2 py-1 bg-accent-soft/10 text-accent-soft text-[10.5px] font-mono uppercase rounded">Limited time deal</div>
+        <p class="mt-4 text-[14.5px] text-ink">20X more power for your CRM.</p>
+
+        <div class="mt-6 text-[12px] font-mono uppercase text-ink-faint">Everything in Procoach, plus:</div>
+        <ul class="mt-3 space-y-2.5 text-[13.5px] text-ink-muted">
+          <li class="flex gap-2"><span class="text-accent-soft">✓</span> Personalized Landing Page</li>
+          <li class="flex gap-2"><span class="text-accent-soft">✓</span> Completed In 10 Business Days</li>
+          <li class="flex gap-2"><span class="text-accent-soft">✓</span> Phone System With Routing</li>
+          <li class="flex gap-2"><span class="text-accent-soft">✓</span> Chatbot Integration</li>
+          <li class="flex gap-2"><span class="text-accent-soft">✓</span> Google Reviews Automation</li>
+          <li class="flex gap-2"><span class="text-accent-soft">✓</span> Customized Calendar</li>
+          <li class="flex gap-2"><span class="text-accent-soft">✓</span> Customized Pipelines</li>
+          <li class="flex gap-2"><span class="text-accent-soft">✓</span> Appointments Integration</li>
+          <li class="flex gap-2"><span class="text-accent-soft">✓</span> Customized Automations</li>
+          <li class="flex gap-2"><span class="text-accent-soft">✓</span> 24/7 Live Customer Service</li>
+        </ul>
+
+        <div class="mt-7 pt-6 border-t border-white/[0.06] mt-auto">
+          <button onclick="window.open('https://landing.automaxcrm.com/bils-appt', '_blank')" class="w-full inline-flex items-center justify-center gap-2 border border-accent-soft/60 hover:bg-accent-soft/10 transition text-accent-soft font-semibold h-12 rounded-xl">
             Choose Package →
           </button>
         </div>
